@@ -34,12 +34,6 @@ async function main() {
   const client = new Chakra('ACCESSKEY:SECRET:USERNAME');
   await client.login();
 
-  const rows = await client.execute(
-    'SELECT id, name, score FROM students WHERE score > $1',
-    [90]
-  );
-  console.table(rows);
-
   const originalStudents = [
     { id: 1, name: 'Alice', active: true },
     { id: 2, name: 'Bob', active: false }
@@ -71,6 +65,12 @@ async function main() {
     createIfMissing: true,
     replaceIfExists: true // replace the table with just the original students data. Charles no longer in table
   });
+
+  const rows = await client.execute(
+    'SELECT * FROM school.class.students WHERE active = $1',
+    [true]
+  );
+  console.table(rows);
 }
 
 main().catch(console.error);
@@ -85,12 +85,6 @@ async function main() {
   const client = new Chakra('ACCESSKEY:SECRET:USERNAME');
   await client.login();
 
-  const rows = await client.execute(
-    'SELECT id, name, score FROM students WHERE score > $1',
-    [90]
-  );
-  console.table(rows);
-
   const originalStudents = [
     { id: 1, name: 'Alice', active: true },
     { id: 2, name: 'Bob', active: false }
@@ -122,6 +116,12 @@ async function main() {
     createIfMissing: true,
     replaceIfExists: true // replace the table with just the original students data. Charles no longer in table
   });
+
+  const rows = await client.execute(
+    'SELECT * FROM school.class.students WHERE active = $1',
+    [true]
+  );
+  console.table(rows);
 }
 
 main().catch(console.error);
