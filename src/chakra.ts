@@ -1,14 +1,12 @@
 import fs from 'fs';
-import path from 'path';
-import os from 'os';
 import tmp from 'tmp-promise';
 import { v4 as uuidv4 } from 'uuid';
 import axios, { AxiosInstance } from 'axios';
-import chalk from 'chalk';
 import { SingleBar, Presets } from 'cli-progress';
 import { ParquetSchema, ParquetWriter } from '@dsnp/parquetjs';
 import { ChakraAPIError, ChakraAuthError } from './exceptions.js';
 import { Transform } from 'stream';
+import chalk from 'chalk';
 
 const BASE_URL = 'https://api.chakra.dev';
 const TOKEN_PREFIX = 'DDB_';

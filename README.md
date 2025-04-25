@@ -1,7 +1,6 @@
 # Chakra JavaScript/TypeScript SDK
 
-[![npm version](https://badge.fury.io/js/chakra-dev%2Fjs-sdk.svg)](https://badge.fury.io/js/chakra-dev%2Fjs-sdk)  
-[![Build Status](https://github.com/Chakra-Labs/chakra-dev/js-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/Chakra-Labs/chakra-dev/js-sdk/actions/workflows/test.yml)  
+[![npm version](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk.svg)](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 
 A JavaScript/TypeScript SDK for interacting with the Chakra API, featuring:
@@ -17,9 +16,9 @@ A JavaScript/TypeScript SDK for interacting with the Chakra API, featuring:
 ## Installation
 
 ```bash
-npm install chakra-dev/js-sdk
+npm install @chakra-dev/js-sdk
 # or
-yarn add chakra-dev/js-sdk
+yarn add @chakra-dev/js-sdk
 ```
 
 ---
@@ -29,7 +28,7 @@ yarn add chakra-dev/js-sdk
 ### CommonJS
 
 ```js
-const { Chakra } = require('chakra-dev/js-sdk');
+const { Chakra } = require('@chakra-dev/js-sdk');
 
 async function main() {
   const client = new Chakra('ACCESSKEY:SECRET:USERNAME');
@@ -80,7 +79,7 @@ main().catch(console.error);
 ### TypeScript
 
 ```ts
-import { Chakra } from 'chakra-dev/js-sdk'
+import { Chakra } from '@chakra-dev/js-sdk'
 
 async function main() {
   const client = new Chakra('ACCESSKEY:SECRET:USERNAME');
@@ -161,7 +160,7 @@ Push a JS array to a table, handling schema, Parquet, upload, import, and cleanu
 
 1. **Clone**  
    ```bash
-   git clone https://github.com/Chakra-Labs/chakra-dev/js-sdk.git
+   git clone https://github.com/Chakra-Network/js-sdk.git
    cd js-sdk
    ```
 

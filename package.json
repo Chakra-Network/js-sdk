@@ -1,13 +1,19 @@
 {
   "name": "@chakra-dev/js-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interact with Chakra API via TypeScript/JavaScript",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "type": "module",
   "scripts": {
     "build": "tsc --build",
     "clean": "rm -rf dist",
@@ -28,7 +34,7 @@
   "dependencies": {
     "@dsnp/parquetjs": "^1.8.6",
     "axios": "^1.4.0",
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.2",
     "cli-progress": "^3.9.0",
     "install": "^0.13.0",
     "npm": "^11.3.0",
