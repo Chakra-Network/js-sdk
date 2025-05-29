@@ -1,7 +1,8 @@
 # Chakra JavaScript/TypeScript SDK
 
-[![npm version](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk.svg)](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+[![npm version](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk.svg)](https://badge.fury.io/js/@chakra-dev%2Fjs-sdk)  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+
+![js](https://github.com/user-attachments/assets/8922788b-6c74-4ca8-9441-31107f5e2949)
 
 A JavaScript/TypeScript SDK for interacting with the Chakra API, featuring:
 
